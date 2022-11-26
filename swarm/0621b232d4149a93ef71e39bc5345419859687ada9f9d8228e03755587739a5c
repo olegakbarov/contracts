@@ -1,0 +1,24 @@
+
+// SPDX-License-Identifier: GPL-3.0
+
+
+pragma solidity >=0.7.0 <0.9.0;
+
+import "hardhat/console.sol";
+
+contract MultiAccount {
+    mapping(address => uint) private _remainingWithdrawAmount;
+
+    constructor(address[] memory owners )  {
+        uint len = owners.length;
+        uint i = 0;
+
+        for (i = 0; i < len; i++) {
+            _remainingWithdrawAmount[owners[i]] = 0;
+        }
+    }
+
+    function showBalances(address x) public view returns (uint) {
+        return _remainingWithdrawAmount[x];
+    }
+}
