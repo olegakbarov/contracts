@@ -23,13 +23,16 @@
 			},
 			{
 				"inputs": [],
-				"name": "AddressStakeMismatch",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "InsufficientFundsForAddress",
-				"type": "error"
+				"name": "showMyWithdrawLimit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -39,7 +42,7 @@
 						"type": "address"
 					}
 				],
-				"name": "showBalance",
+				"name": "showWithdrawnAmount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -96,11 +99,11 @@
 	},
 	"sources": {
 		"contracts/MultiAccount.sol": {
-			"keccak256": "0x8ec3684d9f1bc227add4f381e2c81a1242f47ef0326c2672de1b25e986702c96",
+			"keccak256": "0x260b197b0b68add884b9153fbf6f84a5583f159033d54c7140c42c0516f92ecc",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cb0fdadc3a9bcaabfdc0ea0c3c4c5d6c97023a464b3355ca281efe9aede46a49",
-				"dweb:/ipfs/QmegEUe1ZR4DSgkSeP5hirYjnKmd22TnrTJK8nnP3w4ZcM"
+				"bzz-raw://dc0819f3201dde07091f76bc2680ba5f4ff6d5123c02af724a7564c296badadf",
+				"dweb:/ipfs/QmQbSyGeXxniGJ3v2TTbQFFnpM71pAcuFTQmFQyiBcR48f"
 			]
 		},
 		"hardhat/console.sol": {
